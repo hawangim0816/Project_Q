@@ -3,6 +3,7 @@ import asyncio
 import random
 import openpyxl
 import datetime
+import os
 
 client = discord.Client()
 
@@ -249,4 +250,5 @@ async def on_message(message):
         await client.add_roles(member, role)
 
 
-client.run('NDc3MDMzOTQyNzA5Njk4NTYx.DtgFQA.CH-oFc7Z56bMs7upC_ZrD9p14-0')
+access_token = os.enciron["BOT.TOKEN"]
+client.run(access_token)
