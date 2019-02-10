@@ -250,5 +250,5 @@ async def on_message(message):
         await client.add_roles(member, role)
 
 
-access_token = os.enciron["BOT.TOKEN"]
+access_token = os.environ["BOT.TOKEN"]
 client.run(access_token)
